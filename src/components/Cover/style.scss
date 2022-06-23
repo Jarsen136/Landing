@@ -1,0 +1,103 @@
+
+.cover-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 100px 120px;
+    width: 100%;
+
+
+
+
+    .stats-panel {
+        font-family: 'Poppins';
+        font-style: normal;
+        text-align: left;
+        min-width: 500px;
+        padding-left: 20px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 120%;
+        }
+        &-content {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 180%;
+            color: rgba(255, 255, 255, 0.5);
+
+        }
+        &-buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin: 30px 0;
+            .button-left {
+                margin-right: 20px;
+            }
+        }
+
+        .stats-list {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                .number {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 45px;
+                    // height: 45px;
+                }
+                .name {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    // height: 30px;
+                    color: rgba(255, 255, 255, 0.5);    
+                }
+            }
+        }
+    }
+
+
+
+
+    .image-wall {
+        display: flex;
+        justify-content: center;
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 33%;
+            margin-right: 15px;
+
+            .image-item {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        flex-direction: column;
+
+        .stats-panel {
+            width: 100vw;
+            margin-bottom: 100px;
+            min-width: unset;
+
+        }
+        .image-wall {
+            width: 100vw;
+            .image-column {
+                width: 30%;
+            }
+        }
+    }
+    
+  
+}
+  
